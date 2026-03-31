@@ -1,6 +1,7 @@
-# output data
+# output data and backups
 audio_out/
 other/
+backup/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
