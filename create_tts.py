@@ -16,6 +16,8 @@ VOICE_SETTING_SIMILARITY = float(os.getenv("VOICE_SETTING_SIMILARITY"))
 VOICE_SETTING_STYLE_BOOST = float(os.getenv("VOICE_SETTING_STYLE_BOOST"))
 VOICE_SETTING_SPEED = float(os.getenv("VOICE_SETTING_SPEED"))
 AUDIO_OUTPUT_FORMAT = os.getenv("AUDIO_OUTPUT_FORMAT")
+GENERATION_COUNT = os.getenv("GENERATION_COUNT")
+
 
 elevenlabs = ElevenLabs(
     api_key=ELEVENLABS_API_KEY,
@@ -64,17 +66,18 @@ def tts_file(text: str) -> str:
     
     #creating an output folder
     os.makedirs("audio_out", exist_ok=True)
-    
-    # Generating a unique file name for the output MP3 file
-    save_file_path = f"audio_out/{fn_start}_{uuid.uuid4()}.mp3"
 
-    # Writing the audio to a file
-    with open(save_file_path, "wb") as f:
-        for chunk in response:
-            if chunk:
-                f.write(chunk)
+    for _ in range(GENERATION_COUNT):    
+        # Generating a unique file name for the output MP3 file
+        save_file_path = f"audio_out/{fn_start}_{uuid.uuid4()}.mp3"
 
-    print(f"{save_file_path}: A new audio file was saved successfully!")
+        # Writing the audio to a file
+        with open(save_file_path, "wb") as f:
+            for chunk in response:
+                if chunk:
+                    f.write(chunk)
+
+        print(f"{save_file_path}: A new audio file was saved successfully!")
 
     # Return the path of the saved audio file
     return save_file_path
