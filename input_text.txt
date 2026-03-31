@@ -1,6 +1,5 @@
-[happy] [enunciates] [slows down] The OX has a [EMPHASIS] cot.
-[happy] [enunciates] [slows down] The DOG WANTS the cot.
-[happy] [enunciates] [slows down] The DOG walks in the FOG.
-[happy] [enunciates] [slows down] The DOG TAKES the cot.
-[happy] [enunciates] [slows down] The COP finds the DOG.
+[happy] [enunciates] [slows down] The FOX is in a DEN.
+[happy] [enunciates] [slows down] The FOX sees a RED EGG.
+[happy] [enunciates] [slows down] The FOX gets the EGG.
+[happy] [enunciates] [slows down] The FOX is in a NET.
 [pause]
