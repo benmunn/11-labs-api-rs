@@ -1,5 +1,0 @@
-[happy] [enunciates] [slows down] The MAN drives a VAN.
-[happy] [enunciates] [slows down] A BAT is in the VAN.
-[happy] [enunciates] [slows down] The MAN sees the BAT.
-[happy] [enunciates] [slows down] The VAN hits a CAN.
-[pause]
