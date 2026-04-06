@@ -70,14 +70,22 @@ def tts_file(text: str) -> str:
     for _ in range(GENERATION_COUNT):    
         # Generating a unique file name for the output MP3 file
         save_file_path = f"audio_out/{fn_start}_{uuid.uuid4()}.mp3"
+        save_file_path_noname = f"audio_out/{uuid.uuid4()}.mp3"
 
         # Writing the audio to a file
-        with open(save_file_path, "wb") as f:
-            for chunk in response:
-                if chunk:
-                    f.write(chunk)
-
-        print(f"{save_file_path}: A new audio file was saved successfully!")
+        try:   
+            with open(save_file_path, "wb") as f:
+                for chunk in response:
+                    if chunk:
+                        f.write(chunk)
+            print(f"{save_file_path}: A new audio file was saved successfully!")
+        except OSError:
+            with open(save_file_path_noname, "wb") as f:
+                for chunk in response:
+                    if chunk:
+                        f.write(chunk)
+            print(f"{save_file_path_noname}: A new audio file was saved successfully!")
+        
 
     # Return the path of the saved audio file
     return save_file_path
