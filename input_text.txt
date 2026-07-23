@@ -1,5 +1,9 @@
-[happy] [enunciates] [slows down] The FOX is in a DEN.
-[happy] [enunciates] [slows down] The FOX sees a RED EGG.
-[happy] [enunciates] [slows down] The FOX gets the EGG.
-[happy] [enunciates] [slows down] The FOX is in a NET.
-[pause]
+[slows down] [like a kindergarten teacher] Yoon. [pause] Yoon! [pause] Yoon. [pause]
+Let's try the next one. Here it goes.
+[slows down] [like a kindergarten teacher] Yool. [pause] Yooll! [pause] Yoollll. [pause]
+Let's try the next one. Here it goes.
+[slows down] [like a kindergarten teacher] Ave. [pause] Av! [pause] AVV. [pause]
+Let's try the next one. Here it goes.
+[slows down] [like a kindergarten teacher] ite. [pause] ite! [pause] ight. [pause]
+Let's try the next one. Here it goes.
+[slows down] [like a kindergarten teacher] Oap. [pause] Oap! [pause] Ope. [pause]
